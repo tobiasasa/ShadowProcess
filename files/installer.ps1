@@ -51,10 +51,13 @@ catch {
 	}
 
 #Variables 
-$wd = "pito""
+$wd = random_text
 $path = "$env:temp/$wd"
+echo $path
 
 #Crear directorio
 mkdir $path
+cd $env:temp
+echo "" > poc.txt
 
 
