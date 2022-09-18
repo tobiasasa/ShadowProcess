@@ -48,12 +48,13 @@ try
 } 
 catch {
 	Write-Warning "Failed to disable Windows Defender"
-}
+	}
 
 #Variables 
-$wd = pitooo
+$wd = "pito""
 $path = "$env:temp/$wd"
 
 #Crear directorio
 mkdir $path
+
 
