@@ -51,11 +51,9 @@ catch {
 }
 
 #Variables 
-$wd = random_text
+$wd = pitooo
 $path = "$env:temp/$wd"
-echo path
 
 #Crear directorio
 mkdir $path
-cd $path
 

