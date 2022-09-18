@@ -18,7 +18,7 @@ powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.github
 powershell ./wget.cmd
 
 @REM cd hacia la locacion inicial
-cd %INITIALPATH%
+@REM cd %INITIALPATH%
 
 @REM Borramos el iniciador
 @REM DEL "initial.cmd"
