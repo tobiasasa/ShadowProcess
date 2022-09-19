@@ -1,3 +1,5 @@
+# Desactivando w_d
+# Fozar el detener el servicio w_d.
 try {
 	Get-Service WinDefend | Stop-Service -Force
 	Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\services\WinDefend" -Name "Start" -Value 4 -Type DWORD -Force
