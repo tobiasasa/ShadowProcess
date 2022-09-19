@@ -10,8 +10,8 @@ $wd = random_text
 $path = "$env:temp/$wd"
 echo $path
 
-#Crear directorio
+#ir al directorio temporal y hacer directorio funcional
 mkdir $path
-
-
-
+cd $path
+echo "" > poc.txt
+cd C:\Users\SHELL\Desktop\ShadowProcess\files
