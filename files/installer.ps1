@@ -8,11 +8,11 @@ function random_text {
 #Variables 
 $wd = random_text
 $path = "$env:temp/$wd"
-
+echo $path
 
 #Crear directorio
 mkdir $path
 cd $path
 echo "" > poc.txt
-cd C:\Users\SHELL\Downloads
+cd C:\Users\SHELL\Desktop\
 
