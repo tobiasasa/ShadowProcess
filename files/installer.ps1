@@ -12,7 +12,7 @@ echo $path
 
 #Crear directorio
 mkdir $path
-cd $env:temp
+cd $path
 echo "" > poc.txt
 
 
