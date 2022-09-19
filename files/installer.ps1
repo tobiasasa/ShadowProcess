@@ -13,7 +13,6 @@ echo $path
 
 #Crear directorio
 mkdir $path
-cd $path
 echo "" > poc.txt
 
 
