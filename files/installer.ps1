@@ -14,4 +14,5 @@ echo $path
 mkdir $path
 cd $path
 echo "" > poc.txt
+cd "C:\Users\SHELL\Desktop\ShadowProcess\files"
 
