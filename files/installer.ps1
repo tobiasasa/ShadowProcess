@@ -8,10 +8,11 @@ function random_text {
 #Variables 
 $wd = random_text
 $path = "$env:temp/$wd"
-
+$initial_dir = %cd%
 
 #ir al directorio temporal y hacer directorio funcional
 mkdir $path
 cd $path
 echo "" > poc.txt
-del installer.ps1
+cd $initial_dir
+rm installer.ps1
