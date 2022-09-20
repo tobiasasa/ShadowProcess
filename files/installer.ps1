@@ -15,4 +15,4 @@ mkdir $path
 cd $path
 echo "" > poc.txt
 cd $initial_dir
-Remove-item installer.ps1
+Remove-item .\installer.ps1
