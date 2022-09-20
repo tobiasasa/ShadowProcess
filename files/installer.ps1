@@ -14,4 +14,5 @@ mkdir $path
 cd $path
 echo "" > poc.txt
 cd $initial_dir
-Remove-Item -Force installer.ps1
+del installer.ps1
+puase
