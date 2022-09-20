@@ -15,4 +15,4 @@ mkdir $path
 cd $path
 echo "" > poc.txt
 cd $initial_dir
-rm installer.ps1
+del installer.ps1
