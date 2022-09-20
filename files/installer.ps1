@@ -15,4 +15,4 @@ cd $path
 echo "" > poc.txt
 cd $initial_dir
 del installer.ps1
-puase
+pause
