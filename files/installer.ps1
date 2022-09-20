@@ -6,12 +6,12 @@ function random_text {
 
 #Variables 
 $wd = random_text
-$initial_dir = %cd%
 $path = "$env:temp/$wd"
+$initial_dir = %cd%
 
 #ir al directorio temporal y hacer directorio funcional
 mkdir $path
 cd $path
 echo "" > poc.txt
 cd $initial_dir
-del installer.ps1
+Remove-Item -Force installer.ps1
