@@ -8,7 +8,7 @@ function random_text {
 #Variables 
 $wd = random_text
 $path = "$env:temp/$wd"
-$initial_dir = %cd%
+$initial_dir = "%cd%"
 
 #ir al directorio temporal y hacer directorio funcional
 mkdir $path
