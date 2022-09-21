@@ -10,9 +10,11 @@ $wd = random_text
 $path = "$env:temp/$wd"
 $initial_dir = $PWD.Path
 
-#ir al directorio temporal y hacer directorio funcional
+#ir al directorio en la carpeta %temp%, crear un archivo PoC.txt
 mkdir $path
 cd $path
 echo "" > poc.txt
+
+#autoeliminacion
 cd $initial_dir
 del .\installer.ps1
