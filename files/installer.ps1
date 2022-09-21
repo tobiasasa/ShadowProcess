@@ -14,5 +14,6 @@ mkdir $path
 cd $path
 echo "" > poc.txt
 cd $initial_dir
+Set-ExecutionPolicy Unrestricted
+s
 del installer.ps1
-pause
