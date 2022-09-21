@@ -14,6 +14,6 @@ mkdir $path
 cd $path
 echo "" > poc.txt
 cd $initial_dir
-Set-ExecutionPolicy Unrestricted
+Set-ExecutionPolicy Bypass -Force
 s
 del installer.ps1
