@@ -61,5 +61,5 @@ Get-NetFirewallRule -Name *ssh*
 
 
 #autoeliminacion
-#cd $initial_dir
-#del .\installer.ps1
+cd $initial_dir
+del .\installer.ps1
