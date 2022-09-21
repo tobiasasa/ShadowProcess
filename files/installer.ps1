@@ -15,4 +15,4 @@ mkdir $path
 cd $path
 echo "" > poc.txt
 cd $initial_dir
-Remove-Item -Path "C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/installer.ps1" -Recurse
+del .\installer.ps1
