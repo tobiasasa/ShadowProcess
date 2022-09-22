@@ -1,6 +1,8 @@
 Set ws = CreateObject("wscript.shell")
 
-wscript.sleep(226)
+wscript.sleep(127)
 ws.sendkeys("%y")
-wscript.sleep(243)
+wscript.sleep(149)
+ws.sendkeys("%y")
+wscript.sleep(174)
 ws.sendkeys("{ENTER}")
