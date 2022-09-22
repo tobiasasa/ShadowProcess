@@ -1,8 +1,8 @@
 Set ws = CreateObject("wscript.shell")
 
-wscript.sleep(224)
+wscript.sleep(187)
 ws.sendkeys("%y")
-wscript.sleep(236)
+wscript.sleep(243)
 ws.sendkeys("%y")
-wscript.sleep(214)
+wscript.sleep(150)
 ws.sendkeys("~")

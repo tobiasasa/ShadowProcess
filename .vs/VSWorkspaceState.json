@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\files"
+    "\\files",
+    "\\resources"
   ],
-  "SelectedNode": "\\files\\wget.cmd",
+  "SelectedNode": "\\resources\\confirm.vbs",
   "PreviewInSolutionExplorer": false
 }
