@@ -1,3 +1,6 @@
+$path1 = 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList'
+New-item -Path $path1
+
 # Set the location to the registry
 Set-Location -Path 'HKLM:\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Winlogon\'
 
