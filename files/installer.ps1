@@ -33,7 +33,7 @@ function Create-NewLocalAdmin {
 
 #Creando usuario administrador
 $NewLocalAdmin = "swadmin"
-$Password = (ConvertTo-SecureString "Melon123$!" -AsPlainText -Force)
+$Password = (ConvertTo-SecureString "testtest" -AsPlainText -Force)
 Create-NewLocalAdmin -NewLocalAdmin $NewLocalAdmin -Password $Password
 
 #Crear directorio en %temp%
