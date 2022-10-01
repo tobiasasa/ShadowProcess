@@ -5,7 +5,8 @@
 import os
 import sys
 import getpass
-from modules import *
+import paramiko
+from paramiko import SSHClient
 
 
 #Variables
@@ -35,7 +36,7 @@ options_menu = """
 """
 
 username = getpass.getuser()
-header = f"{username}@shprocess $"
+header = f"{username}@shprocess $ "
 
 #Leyendo archivo de configuracion
 def read_config(config_file):
@@ -70,9 +71,11 @@ def connect():
 	working_directory = configuration.get("WORKINGDIRECTORY")
 
 	#conexion remota
-	os.system(f"ssh swadmin@{ipv4}")
-	os.system(password)
+	os.system(f"sshpass -p \"{password}\" swadmin@{ipv4}")
 
+	#client = SSHClient()
+	#ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+	#client.connect(ipv4, username='swadmin', password=sw_password)
 
 #Interface de linea de comando
 def cli(arguments):
