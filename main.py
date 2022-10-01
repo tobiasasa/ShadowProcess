@@ -70,7 +70,7 @@ def connect():
 	working_directory = configuration.get("WORKINGDIRECTORY")
 
 	#conexion remota
-	os.system(f"ssh shprocess@{ipv4}")
+	os.system(f"ssh swadmin@{ipv4}")
 	os.system(password)
 
 
