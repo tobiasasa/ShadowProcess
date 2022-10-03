@@ -27,7 +27,7 @@ No me hago responsable del uso que le den al malware, es unicamente con fines ed
 | --- | --- |
 | Windows 10 | SSH |
 |  | Python3 |
-|  | Distribución linux |
+|  | Parrot or KaliLinux |
 
 ## ¿Que es ShadowProcess?
 											
