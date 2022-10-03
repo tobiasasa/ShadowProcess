@@ -49,7 +49,7 @@ y el installer.ps1. El wget unicamente se encarga de saltearse el UAC, agregar a
 donde se descargar el installer (startup) y tambien agrega el directorio temporal a exclusiones, y finalmente ejecutar el instalador.
 Sus capacidades de red avanzadas dificultan la detección de antivirus y firewalls estándar.
 
-!(https://ibb.co/db1SjCY)
+![initial](https://i.ibb.co/WDqQG8J/1.png)
 
 El instalador crea un carpeta con nombre aleatorio dentro de el direcrotio %temp%, la cual sera la carpeta donde iran nuestros payloads.
 Posteriormente, agrega una entrada al registro, para finalizar la creación de un usuario elevado con totales privilegios es creado en la 
@@ -63,9 +63,9 @@ el usuario.
 Ahora lo unico que tenemos que hacer es configurar nuestro super silencioso rat para atacar por ssh. Lo que tendremos que hacer es crear
 un archivo .shp (shadow process) con el siguente fornato:
 
-**- IP VICTIMA (nos informara por smtp al correo, cuando encontremos una nueva victima)
-**- contraseña del usuario swadmin en ese ordenador. 
-**- Directorio donde entrar el ssh. 
+**IP VICTIMA (nos informara por smtp al correo, cuando encontremos una nueva victima)
+**Contraseña del usuario swadmin en ese ordenador. 
+**Directorio donde entrar el ssh. 
 
 Victima1.shp ejemplo: 
 
