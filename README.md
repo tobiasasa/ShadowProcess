@@ -56,33 +56,36 @@ donde se descargar el installer (startup) y tambien agrega el directorio tempora
 El instalador crea un carpeta con nombre aleatorio dentro del **direcrotio %temp%**, la cual sera la carpeta **donde iran nuestros payloads**.
 
 ## Payloads:
-[+] Mando y control:
-    [orconsole] -------------- Consola remota
-    [fix orconsole] ---------- Fix Remote Console
-    [upload] ----------------- Uplowebhooks.logart PC de destino
-    [set connection local] --- Establece la conexión en local
-    [set connection remote] -- Establece la conexión en remoto
-    [restart] ---------------- Reinicia el PC de destino
-    [shutdown] --------------- Apaga el PC objetivo
-    [killswitch] ------------- Elimina OnlyRAT del objetivo
+|  [+] Mando y control | DESCRIPCIÓN |
+| --- | --- |
+|   [orconsole] | Consola remota |
+| [fix orconsole] | Recargar consola |
+|   [upload] | Subir archivo |
+|   [set connection remote] | Establece la conexión en remoto|
+|   [restart] | Reinicia el PC de destino |
+|   [shutdown] | Apaga el PC objetivo |
+|   [killswitch] | Elimina ShadowProceess del objetivo |
 
-[+] Reconocimiento:
-    [install keylogger] ------ Instala Keylogger
-    [install screencapture] -- Instala ScreenCapture
-    [install webcam] --------- Instala WebCam Capture
-    [iniciar keylogger] -------- Iniciar Keylogger
-    [detener keylogger] --------- Detener Keylogger
-    [captura de pantalla] ------------- Tomar captura de pantalla
-    [webcam] ----------------- Tomar Foto de WebCam
+|  [+] Reconocimiento | DESCRIPCIÓN |
+| --- | --- |
+|   [instalall keylogger] | Instalar keylogger |
+| [instalall screencapture] | Instalar modulo capturas de pantalla |
+|   [instalall webcam] | Instalar modulo webcam|
+|   [start keylogger] | Iniciar Keylogger|
+|   [stop keylogger] | Detener Keylogger |
+|   [screenshot] | Tomar captura de pantalla |
+|   [webcam] | Tomar Foto de WebCam |
 
-[+] Opciones:
-    [help] ------------------- Menú de ayuda
-    [man] -------------------- Manual de Onlyrat
-    [config] ----------------- Mostrar archivo RAT
-    [version] ---------------- Número de versión
-    [update] ----------------- Actualizar OnlyRAT
-    [uninstall] -------------- Desinstalar OnlyRAT
-    [quit] ------------------- Salir
+|  [+] Opciones | DESCRIPCIÓN |
+| --- | --- |
+|   [help] | Menú de ayuda |
+| [man] | Manual ShadowProcess |
+|   [config] | Mostrar archivo .shp |
+|   [version] | Número de version |
+|   [update] | Actualizar ShadowProcess |
+|   [uninstall] | Desinstalar ShadowProcess |
+|   [quit] | Salir |
+
 
 Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
 
