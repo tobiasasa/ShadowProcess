@@ -1,12 +1,12 @@
-	  		 __ _               _                   ___                             
-                        / _\ |__   __ _  __| | _____      __   / _ \_ __ ___   ___ ___  ___ ___ 
-                        \ \| '_ \ / _` |/ _` |/ _ \ \ /\ / /  / /_)/ '__/ _ \ / __/ _ \/ __/ __| 
-                        _\ \ | | | (_| | (_| | (_) \ V  V /  / ___/| | | (_) | (_|  __/\__ \__ \ 
-                        \__/_| |_|\__,_|\__,_|\___/ \_/\_/   \/    |_|  \___/ \___\___||___/___/
-                        						created by Tobiasasa
+  		 __ _               _                   ___                             
+                / _\ |__   __ _  __| | _____      __   / _ \_ __ ___   ___ ___  ___ ___ 
+                \ \| '_ \ / _` |/ _` |/ _ \ \ /\ / /  / /_)/ '__/ _ \ / __/ _ \/ __/ __| 
+                _\ \ | | | (_| | (_| | (_) \ V  V /  / ___/| | | (_) | (_|  __/\__ \__ \ 
+                \__/_| |_|\__,_|\__,_|\___/ \_/\_/   \/    |_|  \___/ \___\___||___/___/
+                      						created by Tobiasasa
                                 
 				        
-                               <b> [DISCLAIMER] <b>
+                               <[DISCLAIMER]>
 											
 Sientase libre de usar shadowprocess en cualquier equipo en el que tenga permiso de ejecutar software malicioso,
 bajo ningun termino se permite ejecutar/usar shadowprocess en un ordenador en el cual no tenemos permisos para 
@@ -83,9 +83,11 @@ python3 ./shadowprocess.py ./Victima1.shp
 					[4] Add registry
 					[5] Turn on/off AV  & Windows defender
 					[6] RDP	
-					[7] More...											
+					[7] More...	
+					
 SHELL@shprocess $ 0 
 swadmin@192.168.100.228's password: Test123$$!#
+
 Microsoft Windows [Versión 10.0.19044.1889]
 (c) Microsoft Corporation. Todos los derechos reservados.
 swadmin@DESKTOP-I03VIOH C:\Users\swadmin> ¡¡PWN3D!!												
