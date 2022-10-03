@@ -39,8 +39,8 @@ código todo a través de comandos de red y comunicación.
 
 
 ShadowProcess **esta programado en powershell y bash haciendo este un muy buen candidato a ser indetectable, ya 
-que todo ocurre normalmente dentro de windows y todos los cambios son realizado desde el powershell del administrador, por lo cual 
-sus capacidades de red avanzadas dificultan la detección de antivirus y firewalls estándar.
+que todo ocurre normalmente dentro de windows y todos los cambios son realizado desde el powershell administrador, por lo cual 
+sus capacidades de red avanzadas dificultan la detección de antivirus y firewalls estándar.**
 
 ShadowProcess tiene multiples formas de infectar a una victima, la princial concierne una instalación de archivos por lotes.
 
