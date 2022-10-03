@@ -7,7 +7,7 @@
                       						created by Tobiasasa
                                 
 				        
-                             ##<[DISCLAIMER]>##
+                              ## <[DISCLAIMER]>
 											
 Sientase libre de usar shadowprocess en cualquier equipo en el que tenga permiso de ejecutar software malicioso,
 bajo ningun termino se permite ejecutar/usar shadowprocess en un ordenador en el cual no tenemos permisos para 
@@ -23,7 +23,7 @@ asi como aprender a desarrollar el suyo con fines de seguridad.
 No me hago responsable del uso que le den al malware, es unicamente con fines educativos. 
 
 
-                             ##<[¿Que es ShadowProcess?]>##
+                             ## <[¿Que es ShadowProcess?]>
 											
 ShadowProcess es un RAT (Herramienta de acceso remoto) C2 (command and control), realiza la conexión remota mediante ssh, para facilitar la tarea
 de adminsitración, he creado shadorpocess.py a modo de panel de adinistrador para gestionar las conexiones y ordenadores de manera más
