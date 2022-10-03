@@ -44,7 +44,7 @@ sus capacidades de red avanzadas dificultan la detección de antivirus y firewal
 
 ShadowProcess tiene multiples formas de infectar a una victima, la princial concierne **una instalación de archivos por lotes**.
 
-Comenzamos con el archivo **initial.cmd el cual descargar en forma de administrador 2 archivos a la carpeta %startup%, el wget.cmd
+Comenzamos con el archivo **initial.cmd el cual descargar en forma de administrador archivos a la carpeta %startup%, el wget.cmd
 y el installer.ps1.** El wget se encarga de saltearse el UAC, agregar a la lista de exclusiones de windows defender la carpeta %startup%, 
 donde se descargar el installer (startup) y tambien agrega el directorio temporal a exclusiones, finalmente descargar y ejecutar el instalador.
 
