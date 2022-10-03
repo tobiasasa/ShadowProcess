@@ -5,8 +5,8 @@
                         \__/_| |_|\__,_|\__,_|\___/ \_/\_/   \/    |_|  \___/ \___\___||___/___/
                         						created by Tobiasasa
                                 
-                                
-                                [DISCLAIMER]
+				        
+                               <b> [DISCLAIMER] <b>
 											
 Sientase libre de usar shadowprocess en cualquier equipo en el que tenga permiso de ejecutar software malicioso,
 bajo ningun termino se permite ejecutar/usar shadowprocess en un ordenador en el cual no tenemos permisos para 
