@@ -23,20 +23,11 @@ asi como aprender a desarrollar el suyo con fines de seguridad.
 No me hago responsable del uso que le den al malware, es unicamente con fines educativos.*
 
 ## Requisitos:
-PC atacante:
-
-_Distribución de linux [ Basado en Debian ]
- _Kali Linux
- _Parrot OS
-_Terminal BASH
-_Python3
-_Herramientas SSH
-_openssh - cliente
-_ssh - keygen
-_ssh - copia - id
-	
-_PC objetivo:
- _Windows 10 Home
+| Victima | Atacante |
+| --- | --- |
+| Windows 10 | SSH |
+| x | Python3 |
+| x | Distribución linux |
 
 ## ¿Que es ShadowProcess?
 											
