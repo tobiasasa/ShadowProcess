@@ -33,7 +33,7 @@ No me hago responsable del uso que le den al malware, construido unicamente con 
 ## ¿Que es ShadowProcess?
 											
 ShadowProcess es un RAT (Herramienta de acceso remoto) C2 (command and control), **realiza la conexión remota mediante ssh**, para facilitar la tarea
-de adminsitración, he creado shadorpocess.py a modo de panel de adinistrador para gestionar las conexiones y ordenadores de manera más
+de adminsitración, shadowprocess.py se ejecuta a modo de panel de adinistrador para gestionar las conexiones y ordenadores de manera más
 eficiente. Es capaz de conectarse de forma remota a la computadora de destino, cargas y descargas remotas de archivos, así como la ejecución de 
 código todo a través de comandos de red y comunicación.
 
@@ -44,13 +44,12 @@ shadowprocess facilmente evade cualquier sistema de seguridad.
 
 ShadowProcess tiene multiples formas de infectar a una victima, la princial concierne una instalación de archivos por lotes.
 
-
 Comenzamos con el archivo initial.cmd el cual descargar en forma de administrador 2 archivos a la carpeta %startup%, el wget.cmd
 y el installer.ps1. El wget unicamente se encarga de saltearse el UAC, agregar a la lista de exclusiones de windows defender la carpeta, 
 donde se descargar el installer (startup) y tambien agrega el directorio temporal a exclusiones, y finalmente ejecutar el instalador.
 Sus capacidades de red avanzadas dificultan la detección de antivirus y firewalls estándar.
 
-![initial.cmd](https://ibb.co/db1SjCY)
+!(https://ibb.co/db1SjCY)
 
 El instalador crea un carpeta con nombre aleatorio dentro de el direcrotio %temp%, la cual sera la carpeta donde iran nuestros payloads.
 Posteriormente, agrega una entrada al registro, para finalizar la creación de un usuario elevado con totales privilegios es creado en la 
