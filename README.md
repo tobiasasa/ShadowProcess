@@ -1,4 +1,4 @@
-  		  __ _               _                   ___                             
+	  		 	 __ _               _                   ___                             
                 / _\ |__   __ _  __| | _____      __   / _ \_ __ ___   ___ ___  ___ ___ 
                 \ \| '_ \ / _` |/ _` |/ _ \ \ /\ / /  / /_)/ '__/ _ \ / __/ _ \/ __/ __| 
                 _\ \ | | | (_| | (_| | (_) \ V  V /  / ___/| | | (_) | (_|  __/\__ \__ \ 
@@ -22,10 +22,10 @@ asi como aprender a desarrollar el suyo con fines de seguridad.
 No me hago responsable del uso que le den al malware, es unicamente con fines educativos. 
 
 
-                                [¿Que es ShadowProcess?]
+                                <[¿Que es ShadowProcess?]>
 											
-ShadowProcess es un RAT (Herramienta de acceso remoto) C2 (command and control), realiza la conexión remota mediante ssh, lo cual 
-lo convierte en un rat filess.
+ShadowProcess es un RAT (Herramienta de acceso remoto) C2 (command and control), realiza la conexión remota mediante ssh, para facilitar la tarea
+de adminsitración, he creado shadorpocess.py a modo de panel de adinistrador para gestionar las conexiones y ordenadores mas facilmente.
 Es capaz de conectarse de forma remota a la computadora de destino, cargas y descargas remotas de archivos, así como la ejecución de 
 código todo a través de comandos de red y comunicación.
 ShadowProcess emplea una cierta cantidad de ejecuciones de powershell y bash haciendo este un muy buen candidato a ser indetectable, ya 
@@ -67,7 +67,7 @@ Guardamos el archivo como victima.sh y lo unico que es necesario ahora es establ
 
 python3 ./shadowprocess.py ./Victima1.shp
 
-	  		  __ _               _                   ___                             
+	  		             __ _               _                   ___                             
                         / _\ |__   __ _  __| | _____      __   / _ \_ __ ___   ___ ___  ___ ___ 
                         \ \| '_ \ / _` |/ _` |/ _ \ \ /\ / /  / /_)/ '__/ _ \ / __/ _ \/ __/ __| 
                         _\ \ | | | (_| | (_| | (_) \ V  V /  / ___/| | | (_) | (_|  __/\__ \__ \ 
