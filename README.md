@@ -62,8 +62,9 @@ maquina victima, este usuario esta oculto para cualquier usuario o administrador
 ![1](https://user-images.githubusercontent.com/25709702/193583684-c298e340-f191-4837-b556-327a49d7c72d.png)
 
 
+![16](https://user-images.githubusercontent.com/25709702/193588870-ea0e943a-aa0e-41ea-b781-5d2a5bfc5d49.png)
 
-![6](https://user-images.githubusercontent.com/25709702/193583722-46d912dc-76ee-457e-bb23-88d84ffbabbb.png)
+
 
 **Todos los archivos de instalación y configuración se borran automaticamente 5 segundos luego de instalar**, y crear 
 el usuario.
@@ -85,6 +86,8 @@ un archivo .shp (**guardar un txt con extension .shp**) con el siguente formato:
 
 
 ![15](https://user-images.githubusercontent.com/25709702/193583978-2c27c7b4-1e8d-467d-bbe3-3cbc363f514d.png)
+
+![6](https://user-images.githubusercontent.com/25709702/193583722-46d912dc-76ee-457e-bb23-88d84ffbabbb.png)
 
 ¡H4PPY H4CK1NG!
 
