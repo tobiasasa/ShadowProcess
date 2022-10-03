@@ -13,12 +13,12 @@
 bajo ningun termino se permite ejecutar/usar shadowprocess en un ordenador en el cual no tenemos permisos para 
 ejecutar malware, no solamente es ilegal sino que podríamos poner en peligro el equipo en cuestión.
 Dado que el RAT necesita poder conectarse de forma remota, está permitiendo una persistencia de otros piratas
-informáticos en la red puedan apuntar o incluso bruteforce.
+informáticos en la red puedan apuntar o incluso bruteforce.*
 
-El proposito de shadowprocess es enseñar a todo aquel de la comunidad de ciberseguridad los conceptos basicos del desarrollo de malware,
-he comentado todo el codigo , haciendo este mas interpretable por cualquiera que este comenzando, asi que ¡no hay excusas!
+*El proposito de shadowprocess es enseñar a todo aquel de la comunidad de ciberseguridad los conceptos basicos del desarrollo de malware,
+he comentado todo el codigo , haciendo este mas interpretable por cualquiera que este comenzando, asi que ¡no hay excusas!*
 
-El desarrrollo de malware es una habilidad escencial que a menudo se pasa por alto en el mundo de la seguridad, al investigar desarrollo 
+*El desarrrollo de malware es una habilidad escencial que a menudo se pasa por alto en el mundo de la seguridad, al investigar desarrollo 
 de malware, los desarrolladores e investigadores de seguridad pueden comprender mejor como piensan los ciberdelincuentes, asi como 
 aprender a desarrollar el suyo con fines de seguridad.
 No me hago responsable del uso que le den al malware, construido unicamente con fines educativos*
