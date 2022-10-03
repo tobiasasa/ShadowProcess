@@ -42,7 +42,7 @@ ShadowProcess **esta programado en powershell y bash haciendo este un muy buen c
 que todo ocurre normalmente dentro de windows y todos los cambios son realizado desde el powershell administrador, por lo cual 
 sus capacidades de red avanzadas dificultan la detección de antivirus y firewalls estándar.**
 
-ShadowProcess tiene multiples formas de infectar a una victima, la princial concierne una instalación de archivos por lotes.
+ShadowProcess tiene multiples formas de infectar a una victima, la princial concierne **una instalación de archivos por lotes**.
 
 Comenzamos con el archivo **initial.cmd el cual descargar en forma de administrador 2 archivos a la carpeta %startup%, el wget.cmd
 y el installer.ps1.** El wget se encarga de saltearse el UAC, agregar a la lista de exclusiones de windows defender la carpeta %startup%, 
@@ -55,8 +55,8 @@ donde se descargar el installer (startup) y tambien agrega el directorio tempora
 
 El instalador crea un carpeta con nombre aleatorio dentro del **direcrotio %temp%**, la cual sera la carpeta **donde iran nuestros payloads**.
 
-Posteriormente, agrega una entrada al registro de windows, para finalizar un usuario elevado con totales privilegios es creado en la 
-maquina victima, este usuario esta oculto para cualquier usuario o administrador del sistema. 
+Posteriormente, agrega una **entrada al registro de windows**, por ultimo es creado **un usuario elevado con totales privilegios** en la 
+**maquina victima**, este usuario esta oculto para cualquier usuario o administrador del sistema. 
 
 
 ![1](https://user-images.githubusercontent.com/25709702/193583684-c298e340-f191-4837-b556-327a49d7c72d.png)
