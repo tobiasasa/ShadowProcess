@@ -56,7 +56,7 @@ donde se descargar el installer (startup) y tambien agrega el directorio tempora
 El instalador crea un carpeta con nombre aleatorio dentro del **direcrotio %temp%**, la cual sera la carpeta **donde iran nuestros payloads**.
 
 ## Payloads:
-|  [+] Mando y control | DESCRIPCIÓN |
+|  [+] Mando y control | Descripción |
 | --- | --- |
 |   [orconsole] | Consola remota |
 | [fix orconsole] | Recargar consola |
@@ -66,7 +66,7 @@ El instalador crea un carpeta con nombre aleatorio dentro del **direcrotio %temp
 |   [shutdown] | Apaga el PC objetivo |
 |   [killswitch] | Elimina ShadowProceess del objetivo |
 
-|  [+] Reconocimiento | DESCRIPCIÓN |
+|  [+] Reconocimiento | Descripción |
 | --- | --- |
 |   [instalall keylogger] | Instalar keylogger |
 | [instalall screencapture] | Instalar modulo capturas de pantalla |
@@ -76,7 +76,7 @@ El instalador crea un carpeta con nombre aleatorio dentro del **direcrotio %temp
 |   [screenshot] | Tomar captura de pantalla |
 |   [webcam] | Tomar Foto de WebCam |
 
-|  [+] Opciones | DESCRIPCIÓN |
+|  [+] Opciones | Descripción |
 | --- | --- |
 |   [help] | Menú de ayuda |
 | [man] | Manual ShadowProcess |
