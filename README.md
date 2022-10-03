@@ -17,10 +17,11 @@ informáticos en la red puedan apuntar o incluso bruteforce.*
 
 *El proposito de shadowprocess es enseñar a todo aquel de la comunidad de ciberseguridad los conceptos basicos del desarrollo de malware,
 he comentado todo el codigo , haciendo este mas interpretable por cualquiera que este comenzando, asi que ¡no hay excusas!
-El desarrrollo ed malware es una habilidad escencial que a menudo se pasa por alto en el mundo de la seguridad.
-Al investigar desarrollo de malware, los desarrolladores e investigadores de seguridad pueden comprender mejor como piensan los ciberdelincuentes, 
-asi como aprender a desarrollar el suyo con fines de seguridad.
-No me hago responsable del uso que le den al malware, es unicamente con fines educativos.*
+
+El desarrrollo de malware es una habilidad escencial que a menudo se pasa por alto en el mundo de la seguridad, al investigar desarrollo 
+de malware, los desarrolladores e investigadores de seguridad pueden comprender mejor como piensan los ciberdelincuentes, asi como 
+aprender a desarrollar el suyo con fines de seguridad.
+No me hago responsable del uso que le den al malware, construido unicamente con fines educativos.*
 
 ## Requisitos:
 | Victima | Atacante |
@@ -48,6 +49,8 @@ Comenzamos con el archivo initial.cmd el cual descargar en forma de administrado
 y el installer.ps1. El wget unicamente se encarga de saltearse el UAC, agregar a la lista de exclusiones de windows defender la carpeta, 
 donde se descargar el installer (startup) y tambien agrega el directorio temporal a exclusiones, y finalmente ejecutar el instalador.
 Sus capacidades de red avanzadas dificultan la detección de antivirus y firewalls estándar.
+
+![initial.cmd](https://ibb.co/db1SjCY)
 
 El instalador crea un carpeta con nombre aleatorio dentro de el direcrotio %temp%, la cual sera la carpeta donde iran nuestros payloads.
 Posteriormente, agrega una entrada al registro, para finalizar la creación de un usuario elevado con totales privilegios es creado en la 
