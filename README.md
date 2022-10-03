@@ -87,8 +87,6 @@ El instalador crea un carpeta con nombre aleatorio dentro del **direcrotio %temp
 |   [quit] | Salir |
 
 
-Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
-
 Posteriormente, agrega una **entrada al registro de windows**, por ultimo es creado **un usuario elevado con totales privilegios** en la 
 **maquina victima**, este usuario esta oculto para cualquier usuario o administrador del sistema. 
 
