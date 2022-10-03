@@ -33,7 +33,7 @@ No me hago responsable del uso que le den al malware, construido unicamente con 
 ## ¿Que es ShadowProcess?
 											
 ShadowProcess es un RAT (**Herramienta de acceso remoto**) C2 (**command and control**), **realiza la conexión remota mediante ssh**, para facilitar la tarea
-de adminsitración, shadowprocess.py se ejecuta a modo de panel de adinistrador para gestionar las conexiones y ordenadores de manera más
+de adminsitración, shadowprocess.py se ejecuta a modo de panel de administrador para gestionar las conexiones y ordenadores de manera más
 eficiente. Es capaz de conectarse de forma remota a la computadora de destino, cargas y descargas remotas de archivos, así como la ejecución de 
 código todo a través de comandos de red y comunicación.
 
