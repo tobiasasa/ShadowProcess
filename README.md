@@ -26,8 +26,8 @@ No me hago responsable del uso que le den al malware, es unicamente con fines ed
 | Victima | Atacante |
 | --- | --- |
 | Windows 10 | SSH |
-| x | Python3 |
-| x | Distribución linux |
+|  | Python3 |
+|  | Distribución linux |
 
 ## ¿Que es ShadowProcess?
 											
