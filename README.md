@@ -52,7 +52,6 @@ donde se descargar el installer (startup) y tambien agrega el directorio tempora
 
 ![epath](https://user-images.githubusercontent.com/25709702/193588622-fc6f4425-482d-4eb1-9649-33fc007cedf5.png)
 
-
 El instalador crea un carpeta con nombre aleatorio dentro del **direcrotio %temp%**, la cual sera la carpeta **donde iran nuestros payloads**.
 
 ## Payloads:
