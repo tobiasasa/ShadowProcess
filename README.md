@@ -9,11 +9,11 @@
 				        
 ## Disclaimer:
 
-*Sientase libre de usar shadowprocess en cualquier equipo en el que tenga permiso de ejecutar software malicioso,
-bajo ningun termino se permite ejecutar/usar shadowprocess en un ordenador en el cual no tenemos concentimiento para 
-ejecutar malware, no solamente es ilegal sino que podríamos poner en peligro el equipo en cuestión.
-Dado que el RAT necesita poder conectarse de forma remota, está permitiendo una persistencia de otros piratas
-informáticos en la red puedan apuntar o incluso bruteforce.*
+*Sientase libre de descargar/utilizar shadowprocess en cualquier equipo en el que tenga permiso para ejecutar software malicioso,
+bajo ningun termino se permite utilizar shadowprocess en un ordenador en el cual no se tenga concentimiento para 
+ejecutar malware, no solamente es ilegal sino que pondriamos en peligro el equipo en cuestión.
+Dado que la Herramienta de acceso remoto(RAT) necesita poder conectarse de forma remota, está permitiendo una persistencia de 
+otros piratas informáticos en la red puedan apuntar o incluso bruteforce.*
 
 *El proposito de shadowprocess es enseñar a todo aquel de la comunidad de ciberseguridad los conceptos basicos del desarrollo de malware,
 he comentado todo el codigo , haciendo este mas interpretable por cualquiera que este comenzando, asi que ¡no hay excusas!*
