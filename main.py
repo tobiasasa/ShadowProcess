@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 #Consola de ShadowProcess - Tobiasasa
-
-#Importando
+#Modulos
 import os
 import sys
 import getpass
