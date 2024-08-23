@@ -104,7 +104,7 @@ el usuario.
 ![2](https://user-images.githubusercontent.com/25709702/193584369-46ddfb31-ad87-4e4d-827d-a100ff969f79.png)
 
 
-Ahora lo unico que tenemos que hacer es configurar nuestro super silencioso rat para atacar por ssh. Lo que tendremos que hacer es crear
+Ahora lo unico que tenemos que hacer es configurar nuestro rat para atacar por ssh. Lo que tendremos que hacer es crear
 un archivo .shp (**guardar un txt con extension .shp**) con el siguente formato:
 
 
